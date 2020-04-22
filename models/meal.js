@@ -1,5 +1,3 @@
-import Meal from '../models'
-
 class Meal {
     constructor(
         id,
