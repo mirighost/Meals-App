@@ -70,7 +70,7 @@ const tabScreenConfig = {
             },
             tabBarColor: Colors.primaryColor,
             tabBarLabel:
-                Platform.OS === android ? (
+                Platform.OS === 'android' ? (
                     <Text style={{ fontFamily: 'open-sans-bold' }}>Meals</Text>
                 ) : (
                     'Meals'
@@ -91,7 +91,7 @@ const tabScreenConfig = {
             },
             tabBarColor: Colors.accentColor,
             tabBarLabel:
-                Platform.OS === android ? (
+                Platform.OS === 'android' ? (
                     <Text style={{ fontFamily: 'open-sans-bold' }}>
                         Favorites
                     </Text>
