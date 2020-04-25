@@ -1,8 +1,12 @@
-export const TOGGLE_FAVORITE = 'TOGGLE_FAVORITE';
+const TOGGLE_FAVORITE = 'TOGGLE_FAVORITE';
+const SET_FILTERS = 'SET_FILTERS';
 
-export const togglFavorite = (id) => {
-    return {
-        type: TOGGLE_FAVORITE,
-        mealId: id,
-    };
+const toggleFavorite = (id) => {
+    return { type: TOGGLE_FAVORITE, mealId: id };
 };
+
+const setFilters = (filterSettings) => {
+    return { type: SET_FILTERS, filters: filterSettings };
+};
+
+export { SET_FILTERS, TOGGLE_FAVORITE, toggleFavorite, setFilters };

@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import HeaderButton from '../components/HeaderButton';
 import DefaultText from '../components/DefaultText';
-import { togglFavorite } from '../store/actions/meals';
+import { toggleFavorite } from '../store/actions/meals';
 
 const ListItem = (props) => {
     return (
@@ -27,7 +27,7 @@ const MealDetailScreen = (props) => {
     const dispatch = useDispatch();
 
     const toggleFavoriteHandler = useCallback(() => {
-        dispatch(togglFavorite(mealId));
+        dispatch(toggleFavorite(mealId));
     }, [dispatch, mealId]);
 
     useEffect(() => {
